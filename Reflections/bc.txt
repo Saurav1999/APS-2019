@@ -1,0 +1,34 @@
+
+Binomial Coeffcient
+
+If we want just the coefficient with a given n and k value we can use recursive or 1-d dynamic version:
+
+1) Recursive version
+	
+		 calculation of binomial coefficient can be broken down to two sub tasks
+		 i.e C(n,k)=C(n-1,k-1)+C(n-1,k)
+	
+		 memory occupied is more that is (2^n-1)*(memory required for 1st recursive call )
+			1	2^0
+		       /  \	
+		      1    1    2^1
+		     /  \ /  \		 
+	       	     1  1 1   1	2^2
+				 .
+				 .
+				2^n-1
+		memory isn't released until the program completely backtracks.
+		
+2) 1-d dynamic version
+	
+	The size occupied is lesser compared to recursive version  beacuse copy of same set of variables isn't created again and again.
+	
+	speed efficiency of 1d dynamic version is more  because reaching base condition each time takes more time than memorizing the previous state.
+	
+ 	Time Complexity- O(n*k)
+
+3) 2-d dynamic approach
+	
+	If we want to generate whole pascal tree than 2d dynamic array is used.
+	
+	space = n*k*sizeof(int)  	
