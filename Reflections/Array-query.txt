@@ -1,0 +1,16 @@
+
+Array Query Efficient Solutions:
+1. Look-Up table technique:
+	• Holds values which would otherwise need to be calculated.
+	• Replaces runtime computation with a simpler array indexing operation (memoization).
+	• Processing time - Variable (depends upon type of problem being solved)
+	• Fetch Time: O(1)
+2. Square root decomposition:
+	• Based on decomposition of array into smaller blocks. 
+	• Reduce Time Complexity by a factor of sqrt(n) (Worst case:O(sqrt(n) i.e when range completely overlaps all the blocks.)	
+	• Pre-rocessing time - O(n)
+3. Segment Tree:
+	• A binary tree used for storing the intervals or segments.	
+	• Bottom-up approach.
+	• Divide and conquer based.
+	• Time complexity O(log(n))
